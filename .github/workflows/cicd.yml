@@ -25,3 +25,7 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: ${{ vars.DOCKER_USERNAME }}/${{ vars.DOCKERHUB_REPO }}:latest
+#      -
+#        name: Update ECS service
+#        run: |
+#          aws ecs update-service --cluster "name" --service "service" --force-new-deployment
